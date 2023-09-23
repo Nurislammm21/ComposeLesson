@@ -21,6 +21,10 @@ class MainActivity : ComponentActivity() {
 }
 //ghjg
 
+@Composable
+fun newFun() {
+    //NNN
+}
 
 @Preview
 @Composable
