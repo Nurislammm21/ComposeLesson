@@ -19,12 +19,14 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+//Nurislam  1 2 3 4 5 56 67 7
 //ghjg
 
 @Composable
 fun newFun() {
     //NNN
 }
+
 
 @Preview
 @Composable
