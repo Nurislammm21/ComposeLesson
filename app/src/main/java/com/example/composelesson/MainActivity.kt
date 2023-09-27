@@ -45,7 +45,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun AcceptImage(){
-    Column( modifier = Modifier.fillMaxHeight().fillMaxWidth(),verticalArrangement = Arrangement.Center,
+    Column( modifier = Modifier
+        .fillMaxHeight()
+        .fillMaxWidth(),verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
             ){
                Image(painter = painterResource(id = R.drawable.ic_task_completed), contentDescription = "Image ")
@@ -54,14 +56,16 @@ fun AcceptImage(){
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(8.dp))
 
+        Text(text = "Nice work!",
+            fontSize = 18.sp,
+            modifier = Modifier.padding(8.dp)
+            )
+
     }
 
 
 }
 
-@Composable
- fun GreetingText(){
 
-}
 
 
