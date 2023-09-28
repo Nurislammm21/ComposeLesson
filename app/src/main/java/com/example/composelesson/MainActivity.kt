@@ -34,8 +34,7 @@ class MainActivity : ComponentActivity() {
         setContent {
                 Surface( modifier = Modifier.fillMaxSize()) {
 
-                    AcceptImage()
-
+                    ComposeQuadrant()
 
                 }
 
@@ -44,26 +43,23 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun AcceptImage(){
-    Column( modifier = Modifier
-        .fillMaxHeight()
-        .fillMaxWidth(),verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-            ){
-               Image(painter = painterResource(id = R.drawable.ic_task_completed), contentDescription = "Image ")
-        Text(text = "All tasks completed",
-            fontSize = 24.sp,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.padding(8.dp))
+fun ComposeQuadrant(){
 
-        Text(text = "Nice work!",
-            fontSize = 18.sp,
-            modifier = Modifier.padding(8.dp)
-            )
+
+}
+
+
+
+
+@Composable
+fun OneColumn(title : String,
+                description : String,
+                backgroundColor : Color,
+              modifier : Modifier = Modifier
+              ){
+    Column(){
 
     }
-
-
 }
 
 
